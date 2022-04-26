@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Particles </title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      display: flex;
+
+      /* This centers our sketch horizontally. */
+      justify-content: center;
+
+      /* This centers our sketch vertically. */
+      align-items: center;
+    }
+  </style>
+
+  <script src="../p5.js"></script>
+  <script src="../addons/p5.sound.js"></script>
+  <script src="sketch.js"></script>
+
+  <script src="./src/CCapture.js"></script>
+  <script src="./src/webm-writer-0.2.0.js"></script>
+  <script src="./src/download.js"></script>
+  
+  <script>
+
+  //Capture on video
+  capturer = new CCapture({
+    framerate: 60,
+    format: "png",
+    verbose: true,
+  });
+  </script>
+
+</head>
+
+<body>
+  <main>
+  </main>
+</body>
+
+</html>
